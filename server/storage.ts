@@ -192,7 +192,7 @@ export class MemStorage implements IStorage {
       categoryId: basicNeeds.id,
       label: "No",
       labelPortuguese: "Não",
-      imageUrl: "https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?w=200&h=200&fit=crop",
+      imageUrl: "https://images.unsplash.com/photo-1693168058063-f8e3474ce214?w=200&h=200&fit=crop",
       displayOrder: 7
     });
     
