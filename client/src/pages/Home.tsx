@@ -52,7 +52,7 @@ export default function Home() {
   };
   
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-background-500">
       <AppHeader />
       
       <main className="flex-grow container mx-auto p-4 flex flex-col gap-4">

@@ -4,7 +4,7 @@ export default function AppFooter() {
   return (
     <footer className="bg-gray-200 p-4 text-center text-darkText">
       <p>
-      Comunitech | {" "}
+      ComuniTech | {" "}
         <Link href="/help">
           <a className="underline hover:text-primary focus:outline-none focus:text-primary">
             Help

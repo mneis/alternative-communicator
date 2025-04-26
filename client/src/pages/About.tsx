@@ -12,7 +12,7 @@ export default function About() {
       <main className="flex-grow container mx-auto p-4">
         <Card className="max-w-4xl mx-auto my-8">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold">About Comunitech</CardTitle>
+            <CardTitle className="text-3xl font-bold">About ComuniTech</CardTitle>
             <CardDescription>
               Alternative and Augmentative Communication for everyone
             </CardDescription>

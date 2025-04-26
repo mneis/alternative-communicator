@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Category } from "@shared/schema";
 import { Button } from "@/components/ui/button";
-import { Home, Smile, Footprints, MapPin, User } from "lucide-react";
+import { Home, Smile, Footprints, MapPin, User, MessageSquare } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface CategoryTabsProps {
@@ -17,6 +17,7 @@ const iconMap: Record<string, React.ReactNode> = {
   directions_run: <Footprints className="h-5 w-5" />,
   place: <MapPin className="h-5 w-5" />,
   person: <User className="h-5 w-5" />,
+  chat: <MessageSquare className="h-5 w-5" />,
 };
 
 export default function CategoryTabs({ selectedCategoryId, onSelectCategory }: CategoryTabsProps) {
@@ -69,7 +70,7 @@ export default function CategoryTabs({ selectedCategoryId, onSelectCategory }: C
           className={`flex items-center gap-2 py-3 ${
             selectedCategoryId === category.id 
               ? "bg-primary text-white" 
-              : "bg-gray-200 text-darkText hover:bg-gray-300"
+              : "bg-gray-100 text-gray-900 hover:bg-gray-200"
           }`}
           onClick={() => onSelectCategory(category.id)}
           aria-pressed={selectedCategoryId === category.id}

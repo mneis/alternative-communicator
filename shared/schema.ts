@@ -6,9 +6,9 @@ import { z } from "zod";
 export const categories = pgTable("categories", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
-  namePortuguese: text("name_portuguese"),
+  namePortuguese: text("name_portuguese").default("").notNull(),
   icon: text("icon").notNull(), // Material icon name
-  displayOrder: integer("display_order").notNull().default(0),
+  displayOrder: integer("display_order").default(0).notNull(),
 });
 
 export const insertCategorySchema = createInsertSchema(categories).pick({
@@ -23,9 +23,9 @@ export const cards = pgTable("cards", {
   id: serial("id").primaryKey(),
   categoryId: integer("category_id").notNull(),
   label: text("label").notNull(),
-  labelPortuguese: text("label_portuguese"),
+  labelPortuguese: text("label_portuguese").default("").notNull(),
   imageUrl: text("image_url").notNull(),
-  displayOrder: integer("display_order").notNull().default(0),
+  displayOrder: integer("display_order").default(0).notNull(),
 });
 
 export const insertCardSchema = createInsertSchema(cards).pick({

@@ -7,7 +7,7 @@ export default function AppHeader() {
     <header className="bg-primary text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-2xl font-bold cursor-pointer">Comunitech</h1>
+          <h1 className="text-2xl font-bold cursor-pointer">ComuniTech</h1>
         </Link>
         <Button
           variant="ghost"
